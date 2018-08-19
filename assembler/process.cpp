@@ -15,24 +15,39 @@ void process(string file)
 	string s = "";
 	string str = "";
 	string data = "";
-
-
+	bool validity = false;
+	int i = 0;
 	while (getline(in, s))
 	{
 		
-		for (int i = 0; i < s.length(); i++)//情况：注释“#”，前头有空格的，前头没空格的，空行。
+		for (i = 0; i < s.length(); i++)//情况：注释“#”，前头有空格的，前头没空格的，空行。
 		{									//单引号是char类型，双引号是字符串类型。
 			if (s[i] != ' ')
 			{
-				if (s[i] == '#') { break; }//注释，跳过
+				if (s[i] == '#') 
+				{
+					validity = false;
+					break;
+				}//注释，跳过
 				else 
 				{
-					str += s[i];
+					validity = true;
+					break;
 				}
 				
 
 			}
 			
+
+		}
+
+		if (validity)
+		{
+			for (;i < s.length(); i++)
+			{
+				str += s[i];
+
+			}
 
 		}
 		if (str != "")//空行，跳过
