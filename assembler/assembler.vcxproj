@@ -163,6 +163,10 @@
     </ClCompile>
     <ClCompile Include="translation.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="order.txt" />
+    <Text Include="table.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
