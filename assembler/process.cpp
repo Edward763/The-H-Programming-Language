@@ -11,7 +11,7 @@ void process(string file)
 	in.open(file.data());   
 	assert(in.is_open());   
 
-	ofstream out("one");
+	ofstream out("temp");
 	string s = "";
 	string str = "";
 	string data = "";
