@@ -153,6 +153,7 @@
     <ClInclude Include="translation.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="error.cpp" />
     <ClCompile Include="maincpp.cpp" />
     <ClCompile Include="process.cpp" />
     <ClCompile Include="stdafx.cpp">
