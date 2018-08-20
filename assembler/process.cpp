@@ -4,7 +4,7 @@
 #include<fstream>
 
 
-void process(string file,int bit)
+void process(string mode ,string file,int bit)
 {
 	//Erase space and annotation
 	ifstream in;
