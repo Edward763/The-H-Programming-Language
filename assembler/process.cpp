@@ -68,8 +68,12 @@ void process(string file)
 	in.close();
 	out.close();
 		//逐行读取数据并存于data中，直至数据全部读取
-
-	read_code_first();//第一次阅读代码
+	//设置obj路径 Set the path of obj
+	file = file.substr(0, file.rfind("."));//去掉后缀名
+	string new_file = file + (string)".obj";
+	cout << new_file << endl;
+	//
+	read_code_first(new_file);//第一次阅读代码
 	
 
 	//
