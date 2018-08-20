@@ -10,7 +10,7 @@ void process(string file)
 	ifstream in;
 	in.open(file.data());   
 	assert(in.is_open());   
-
+	assert(in.is_open());
 	ofstream out("temp");
 	string s = "";
 	string str = "";
