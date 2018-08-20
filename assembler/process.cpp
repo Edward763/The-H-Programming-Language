@@ -4,7 +4,7 @@
 #include<fstream>
 
 
-void process(string file)
+void process(string file,int bit)
 {
 	//Erase space and annotation
 	ifstream in;
@@ -73,7 +73,7 @@ void process(string file)
 	string new_file = file + (string)".obj";
 	cout << new_file << endl;
 	//
-	read_code_first(new_file);//第一次阅读代码
+	read_code_first(new_file,bit);//第一次阅读代码
 	
 
 	//

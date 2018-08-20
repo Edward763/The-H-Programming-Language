@@ -1,10 +1,12 @@
 #include "stdafx.h"
-char Filename[1024];
-int main()
+
+int main(char Filename[1024],int bit)
 {
-	cin >> Filename;
-	process(Filename);
-	
+	if (name == "")
+	{	
+		cin >> Filename >> bit;
+		process(Filename,bit);
+	}
 	system("pause");//ÔÝÍ£
 	return 0;
 }
