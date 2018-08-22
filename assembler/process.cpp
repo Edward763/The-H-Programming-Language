@@ -45,7 +45,13 @@ void process(string mode ,string file,int bit)
 		{
 			for (;i < s.length(); i++)
 			{
-				str += s[i];
+				if (s[i] == '#') {
+					break;
+				}
+				else
+				{
+					str += s[i];
+				}
 
 			}
 
