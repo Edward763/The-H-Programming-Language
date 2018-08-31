@@ -1,8 +1,11 @@
 #include "stdafx.h"
 
+
+
+
+
 int main(int argc, char *argv[])
 {
-
 	if (argc != 1)
 	{	
 		process(argv[1],argv[2], argv[3]);
@@ -19,3 +22,5 @@ int main(int argc, char *argv[])
 	system("pause");//ÔÝÍ£
 	return 0;
 }
+
+
